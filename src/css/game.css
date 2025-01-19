@@ -1,0 +1,159 @@
+@font-face {
+    font-family: gamefont;
+    src: url("https://qr4xx.github.io/Aldrich-Regular.ttf");
+}
+
+#tlInfHold,
+#aHider,
+#streamContainer,
+#topRightAdHolder,
+#editorBtnM,
+.menuSocialB,
+.verticalSeparator,
+#gameNameHolder {
+    display: none !important;
+}
+
+#uiBase.onMenu #chatHolder {
+    left: 10px;
+    bottom: 200px;
+}
+
+#menuItemContainer {
+    top: unset;
+    right: 0;
+    width: 100%;
+    flex-direction: row;
+    height: 150px;
+}
+
+.menuItemTitle {
+    display: none;
+}
+
+#uiBase.onMenu #mapInfoHolder {
+    bottom: 150px;
+}
+
+#menuClassContainer {
+    bottom: 250px;
+}
+
+#bubbleContainer {
+    display: none !important
+}
+
+#classPreviewCanvas {
+    display: none;
+}
+
+#chatList {
+    mask-image: linear-gradient(#fff0, #fff, #fff);
+}
+
+#subLogoButtons {
+    bottom: 160px;
+}
+
+#hiddenClasses {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr);
+    left: unset !important;
+    margin: unset !important;
+    pointer-events: initial;
+    position: absolute;
+
+    right: 130px;
+    bottom: 420px;
+    gap: 30px;
+    z-index: 999999;
+}
+
+#hiddenClasses>div {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+    cursor: pointer;
+    z-index: 9999999999;
+    transform: scale(1);
+    transition: .2s;
+}
+
+#hiddenClasses>div:hover {
+    transform: scale(1.2);
+    transition: .2s;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 4px #fff);
+}
+
+#menuClassPicker0 {
+    content: url("https://assets.krunker.io/textures/classes/icon_0.png");
+}
+
+#menuClassPicker1 {
+    content: url("https://assets.krunker.io/textures/classes/icon_1.png");
+}
+
+#menuClassPicker2 {
+    content: url("https://assets.krunker.io/textures/classes/icon_2.png");
+}
+
+#menuClassPicker3 {
+    content: url("https://assets.krunker.io/textures/classes/icon_3.png");
+}
+
+#menuClassPicker4 {
+    content: url("https://assets.krunker.io/textures/classes/icon_4.png");
+}
+
+#menuClassPicker5 {
+    content: url("https://assets.krunker.io/textures/classes/icon_5.png");
+}
+
+#menuClassPicker6 {
+    content: url("https://assets.krunker.io/textures/classes/icon_6.png");
+}
+
+#menuClassPicker7 {
+    content: url("https://assets.krunker.io/textures/classes/icon_7.png");
+}
+
+#menuClassPicker8 {
+    content: url("https://assets.krunker.io/textures/classes/icon_8.png");
+}
+
+#menuClassPicker9 {
+    content: url("https://assets.krunker.io/textures/classes/icon_9.png");
+}
+
+#menuClassPicker10 {
+    content: url("https://assets.krunker.io/textures/classes/icon_10.png");
+}
+
+#menuClassPicker11 {
+    content: url("https://assets.krunker.io/textures/classes/icon_11.png");
+}
+
+#menuClassPicker12 {
+    content: url("https://assets.krunker.io/textures/classes/icon_12.png");
+}
+
+#menuClassPicker13 {
+    content: url("https://assets.krunker.io/textures/classes/icon_13.png");
+}
+
+#menuClassPicker14 {
+    content: url("https://assets.krunker.io/textures/classes/icon_14.png");
+}
+
+#menuClassPicker15 {
+    content: url("https://assets.krunker.io/textures/classes/icon_15.png");
+}
+
+.menuItem {
+    border-top: 5px solid transparent
+}
+
+.menuItem:hover {
+    border-top: 5px #fff solid
+}

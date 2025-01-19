@@ -1,2 +1,1 @@
-# Anal-Client
-Custom Krunker Client.
+# Anal-Client-Priv

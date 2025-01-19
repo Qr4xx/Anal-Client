@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anal * Client</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="version">${version}</div>
+    <div id="titleHolder">
+        <div id="title1" class="tit">ANAL</div>
+        <div id="title2" class="tit"><img class="ast" src="../img/astarisk.png"></div>
+        <div id="title3" class="tit">CLIENT</div>
+    </div>
+    <div id="stat">${stat}</div>
+    <style>
+        body {
+            padding: unset;
+            margin: unset;
+            width: 600px;
+            height: 300px;
+            background: transparent;
+            font-family: "Roboto Condensed", serif;
+            -webkit-app-region: drag;
+            user-select: none;
+        }
+
+        #titleHolder {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            border: 10px solid white;
+            background: linear-gradient(-60deg, #0081cc 0% 45%, #21abfc 45% 55%, #0081cc 55% 100%)
+        }
+
+        .tit {
+            font-size: 90px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: translate(-50%, -50%) rotateZ(0deg);
+            }
+
+            100% {
+                transform: translate(-50%, -50%) rotateZ(360deg);
+            }
+        }
+
+        #title1 {
+            /* transform: translate(-50%, -50%); */
+            position: fixed;
+            top: 0;
+            left: 20px;
+            transition: .2s;
+            text-shadow: 2px 2px 2px rgb(0, 93, 146);
+
+        }
+
+        #title2 {
+            position: fixed;
+            left: 50%;
+            top: 50%;
+        }
+
+        .ast {
+            width: 300px;
+            animation: spin 2s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.363));
+        }
+
+        #title3 {
+            position: fixed;
+            bottom: 0;
+            right: 20px;
+            transition: .2s;
+            text-shadow: 2px 2px 2px rgb(0, 93, 146);
+        }
+
+        #version {
+            color: white;
+            position: fixed;
+            top: 15px;
+            right: 30px;
+        }
+
+        #stat {
+            color: white;
+            position: fixed;
+            bottom: 15px;
+            left: 30px;
+        }
+    </style>
+</body>
+
+</html>

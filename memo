@@ -1,0 +1,109 @@
+{
+    "header": "Game Settings",
+    "label": "settings",
+    "sticky": true,
+    "dark": false,
+    "popup": true,
+    "width": 1200,
+    "maxH": "calc(100% - 270px)",
+    "settingSearch": null,
+    "tabIndex": 5,
+    "settingType": "advanced",
+    "tabs": {
+        "basic": [
+            {
+                "name": "General",
+                "categories": [
+                    "local",
+                    "serverb",
+                    "kpd",
+                    "dev"
+                ]
+            },
+            {
+                "name": "Display",
+                "categories": [
+                    "interface",
+                    "quality"
+                ]
+            },
+            {
+                "name": "Game",
+                "categories": [
+                    "binds",
+                    "gameplay",
+                    "mobile",
+                    "viewmodel"
+                ]
+            },
+            {
+                "name": "Sound",
+                "categories": [
+                    "audio"
+                ]
+            }
+        ],
+        "advanced": [
+            {
+                "name": "General",
+                "categories": [
+                    "local",
+                    "network",
+                    "serverb",
+                    "popup",
+                    "experimental",
+                    "kpd",
+                    "dev"
+                ]
+            },
+            {
+                "name": "Controls",
+                "categories": [
+                    "binds",
+                    "gameplay",
+                    "controller",
+                    "mobile"
+                ]
+            },
+            {
+                "name": "Display",
+                "categories": [
+                    "interface",
+                    "spectating",
+                    "minimap",
+                    "medals",
+                    "crosshair",
+                    "crosshairm",
+                    "hitmarker",
+                    "chat"
+                ]
+            },
+            {
+                "name": "Render",
+                "categories": [
+                    "shaders",
+                    "quality",
+                    "post",
+                    "editing"
+                ]
+            },
+            {
+                "name": "Game",
+                "categories": [
+                    "gameprivacy",
+                    "viewmodel",
+                    "mods"
+                ]
+            },
+            {
+                "name": "Sound",
+                "categories": [
+                    "audio"
+                ]
+            }
+        ]
+    },
+    "currWep": 0,
+    "html": "",
+    "closed": false
+}
