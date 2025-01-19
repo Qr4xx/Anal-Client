@@ -1,0 +1,40 @@
+{
+  "name": "krunker.anal.client",
+  "displayName": "Anal Client",
+  "appName": "Anal Client",
+  "productName": "Anal Client",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "electron .",
+    "build": "electron-builder --x64 --win --publish never",
+    "publish": "electron-builder --x64 --win --publish "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qr4xx/Anal-Client.git"
+  },
+  "keywords": [
+    "krunker"
+  ],
+  "author": "Qr4xx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Qr4xx/Anal-Client/issues"
+  },
+  "homepage": "https://github.com/Qr4xx/Anal-Client#readme",
+  "description": "",
+  "devDependencies": {
+    "electron": "^10.4.7",
+    "electron-builder": "^22.9.1"
+  },
+  "dependencies": {
+    "bytenode": "^1.5.6",
+    "discord-rpc": "^3.2.0",
+    "electron-localshortcut": "^3.2.1",
+    "electron-log": "^5.2.4",
+    "electron-store": "^8.2.0",
+    "electron-tabs": "^0.7.3",
+    "node-fetch": "^2.7.0"
+  }
+}
