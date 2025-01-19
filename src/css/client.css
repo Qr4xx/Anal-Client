@@ -113,6 +113,8 @@ div#altAcc:hover {
     text-align: left;
     align-content: center;
     padding: 10px;
+    display: flex;
+    align-items: center;
 }
 
 #edit:hover {
@@ -141,4 +143,9 @@ div#altAcc:hover {
     padding: 10px;
     width: fit-content;
     border-radius: 10px;
+}
+
+.altEditConf {
+    width: 100% !important;
+    padding: 10px;
 }
