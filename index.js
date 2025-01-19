@@ -9,6 +9,11 @@ const fs = require('fs');
 const tool = require("./src/js/analTools")
 anal = new tool.clientTools()
 const setting = require('./src/js/setting');
+const RPC = require('discord-rpc');
+const clientId = '1330531532607197286';
+const rpc = new RPC.Client({ transport: 'ipc' });
+
+
 
 let splash
 let game
@@ -220,7 +225,40 @@ anal.flag();
 ipcMain.on("exitClient", () => {
     console.log("exit")
 })
+//discord rpc
+ipcMain.on("rpc", (e, map, mode, time, onoff) => {
+    time = Math.floor(Date.now() / 1000 + time)
+    console.log(time)
+    console.log(map, mode, time)
+    if (onoff) {
+        startRpc(map, mode, time)
+    } else if (!onoff) {
+        stopRPC()
+    }
+})
+async function startRpc(map, mode, time) {
+    try {
+        await rpc.login({ clientId });
+    } catch (e) { }
+    if (rpc) {
+        rpc.setActivity({
+            details: mode,
+            state: map,
+            largeImageKey: 'icon',
+            largeImageText: 'ANAL*CLIENT | Krunker',
+            buttons: [
+                { label: 'Download Client', url: 'https://qr4xx.github.io/' },
+                { label: 'Source', url: 'https://github.com/Qr4xx/Anal-Client' },
+            ],
+        });
+    }
+}
+function stopRPC() {
+    if (!rpc) return;
+    rpc.clearActivity();
+}
 
 app.on('ready', () => {
     splashWM()
 })
+
