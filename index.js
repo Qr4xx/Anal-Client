@@ -11,6 +11,7 @@ anal = new tool.clientTools()
 const setting = require('./src/js/setting');
 const RPC = require('discord-rpc');
 const clientId = '1330531532607197286';
+const { autoUpdater } = require('electron-updater')
 const rpc = new RPC.Client({ transport: 'ipc' });
 
 
