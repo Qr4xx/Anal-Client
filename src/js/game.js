@@ -3,6 +3,7 @@ const path = require("path")
 const analTools = require("./analTools")
 const tool = new analTools.gameTools()
 const Store = require("electron-store")
+const setting = require('./setting')
 const config = new Store()
 
 //set client setting tab
@@ -143,4 +144,14 @@ ipcRenderer.on("quickJoin", () => {
 })
 ipcRenderer.on("esc", () => {
     document.exitPointerLock()
+})
+
+//rpc
+document.addEventListener("DOMContentLoaded", () => {
+    setInterval(function () {
+        let val = window.getGameActivity()
+        console.log(val)
+        ipcRenderer.send("rpc", val.map, val.mode, val.time, config.get("discordRpc", setting.discordRpc.val))
+    }, 5000);
+
 })
