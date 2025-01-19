@@ -116,7 +116,7 @@ const gameWM = () => {
         }
     })
     game.webContents.loadURL("https://krunker.io")
-    game.webContents.toggleDevTools()
+    // game.webContents.toggleDevTools()
     game.setPosition(config.get('windowX') || 0, config.get('windowY') || 0);
     shortcut.register(game, "F11", () => {
         game.setFullScreen(!game.isFullScreen())
@@ -224,4 +224,3 @@ ipcMain.on("exitClient", () => {
 app.on('ready', () => {
     splashWM()
 })
-
