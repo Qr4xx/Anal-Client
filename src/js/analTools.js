@@ -393,8 +393,8 @@ exports.gameTools = class {
                 <input type="checkbox" name="pwDisp" id="pwDisp" onclick="window.gt.pwDisp(this.checked)">
                 </label>
                 </div>
-                <div class="accBtn button buttonP" onclick="window.gt.editConf(${alt[0]})">
-                    Edit alt</div>
+                <div class="button altEditConf" onclick="window.gt.editConf(${alt[0]})">
+                    Confirm edit</div>
                 </div>`
             }
         }
