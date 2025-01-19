@@ -1,4 +1,4 @@
-const { BrowserWindow, app, protocol, session, ipcMain, Menu, autoUpdater } = require('electron');
+const { BrowserWindow, app, protocol, session, ipcMain, Menu } = require('electron');
 const path = require('path');
 const Store = require('electron-store');
 const config = new Store();
