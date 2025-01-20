@@ -3,7 +3,7 @@
   "displayName": "Anal Client",
   "appName": "Anal Client",
   "productName": "Anal Client",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "electron .",
